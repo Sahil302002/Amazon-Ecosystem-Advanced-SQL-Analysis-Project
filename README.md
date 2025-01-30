@@ -16,7 +16,7 @@ This project showcases advanced SQL skills and the ability to extract valuable b
 
 ## **Dataset Overview and Dataset File Link**
 
-- **Customers Table:** 898 records, 4 columns,  <a href = "customers.csv"> Customer Csv File</a>
+- **Customers Table:** 898 records, 4 columns,  <a href = "customers.csv"> Customer Csv File Link</a>
     - Captures customer demographics.
     - Columns: `customer_id`, `first_name`, `last_name`, `state`
       
@@ -48,7 +48,7 @@ This project showcases advanced SQL skills and the ability to extract valuable b
     - Records payment status and transaction details.
     - Columns: `payment_id`, `order_id`, `payment_date`, `payment_status`
 
-- **Inventory Table:** 765 records, 5 columns     <a href = "customers.csv"> Inventory Csv File Link</a>
+- **Inventory Table:** 765 records, 5 columns     <a href = "inventory.csv"> Inventory Csv File Link</a>
     - Monitors stock levels and warehouse information.
     - Columns: `inventory_id`, `product_id`, `stock`, `warehouse_id`, `last_stock`
 
