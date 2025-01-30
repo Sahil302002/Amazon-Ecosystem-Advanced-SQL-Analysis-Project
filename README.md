@@ -14,52 +14,42 @@ This project analyzes a dataset of 21,000+ records across 9 interrelated tables,
 
 This project showcases advanced SQL skills and the ability to extract valuable business insights from complex e-commerce data, making it ideal for data analytics and business intelligence roles.
 
-## **Dataset Overview:**
+## **Dataset Overview and Dataset File Link **
 
-- **Customers Table:** 898 records, 4 columns, Customer file
-    
+- **Customers Table:** 898 records, 4 columns,  <a href = "customers.csv"> Customer Csv File</a>
     Captures customer demographics.
-    
     - Columns: `customer_id`, `first_name`, `last_name`, `state`
-- **Products Table:** 766 records, 5 columns Products file
-    
+    - 
+- **Products Table:** 766 records, 5 columns  <a href = "customers.csv"> Customer Csv File</a>
     Contains product details like pricing and category.
-    
     - Columns: `product_id`, `product_name`, `price`, `Cogs`, `category_id`
-- **Category Table:** 6 records, 2 columns  Category file
-    
-    Classifies products into categories.
-    
+
+- **Category Table:** 6 records, 2 columns  <a href = "customers.csv"> Customer Csv File Link </a>
+     Classifies products into categories.
     - Columns: `category_id`, `category_name`
-- **Sellers Table:** 55 records, 3 columns    Sellers file
-    
-    Information on sellers and their origin countries.
-    
-    - Columns: `seller_id`, `seller_name`, `origin`
-- **Orders Table:** 21,629 records, 5 columns  Orders file
-    
-    Contains order details such as customer, seller, and order status.
-    
+      
+- **Sellers Table:** 55 records, 3 columns    <a href = "customers.csv"> Seller Csv File Link </a>
+   Information on sellers and their origin countries.
+ - Columns: `seller_id`, `seller_name`, `origin`
+      
+- **Orders Table:** 21,629 records, 5 columns  <a href = "customers.csv"> Orders Csv File Link </a>
+  Contains order details such as customer, seller, and order status.
     - Columns: `order_id`, `order_date`, `customer_id`, `seller_id`, `order_status`
-- **Order Items Table:** 21,629 records, 5 columns Order_items file
-    
-    Provides details on purchased items, including quantity and price.
-    
+
+- **Order Items Table:** 21,629 records, 5 columns <a href = "customers.csv"> Order Items file Link </a>
+      Provides details on purchased items, including quantity and price.  
     - Columns: `order_item`, `order_id`, `product_id`, `quantity`, `price`
-- **Shipping Table:** 21,141 records, 6 columns Shipping file
-    
+    - 
+- **Shipping Table:** 21,141 records, 6 columns <a href = "customers.csv"> Shipping csv file Link </a>
     Tracks shipping and return statuses.
-    
     - Columns: `shipping_id`, `order_id`, `shipping_date`, `return_date`, `shipping_provider`, `delivery_status`
-- **Payment Table:** 21,629 records, 4 columns Payment file
     
+- **Payment Table:** 21,629 records, 4 columns <a href = "customers.csv"> Payment Csv File Link </a>
     Records payment status and transaction details.
-    
     - Columns: `payment_id`, `order_id`, `payment_date`, `payment_status`
-- **Inventory Table:** 765 records, 5 columns Inventory file
-    
-    Monitors stock levels and warehouse information.
-    
+
+- **Inventory Table:** 765 records, 5 columns     <a href = "customers.csv"> Inventory Csv File Link</a>
+     Monitors stock levels and warehouse information.
     - Columns: `inventory_id`, `product_id`, `stock`, `warehouse_id`, `last_stock`
 
 ## **Learning Objectives:**
