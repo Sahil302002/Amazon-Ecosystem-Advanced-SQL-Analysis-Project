@@ -154,6 +154,13 @@ What makes this project unique is that while the instructor from the YouTube cha
     - Identified products with high return rates using `COUNT()` and `CASE WHEN`.
     - Analyzed profit margins by computing revenue minus cost price.
 
+- ### **Access my Project file**
+  
+- Amazon SQL Analysis Report (PDF): <a href = "Amazon Advance SQL Data Analysis Project.pdf">Report Link </a>
+- Amazon SQL Script: <a href = "Amazon SQL Script.sql"> Script Link </a>
+- Amazon SQL Query Documentation (Word) <a href = "Amazon Advance SQL Data Analysis Project.docx">  MS Word Report Link </a>
+
+
 # Business Problem Solved in this Task
 
 ### Task 1: Update Order ID Column Data Type in Orders Table
