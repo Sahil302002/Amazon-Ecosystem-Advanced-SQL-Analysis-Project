@@ -5,7 +5,7 @@
 
 This project analyzes a dataset of 21,000+ records across 9 interrelated tables, simulating real-world business challenges within the Amazon ecosystem. It covers key domains like sales, customers, products, returns, payments, shipping, and inventory management.
 
-**Key Highlights:**
+### **Key Highlights:**
 
 - **Data Handling**: Managed large-scale datasets (21,000+ records, 9 tables) typical of e-commerce platforms.
 - **SQL Techniques**: Used CTEs, Window Functions (LAG, DENSE_RANK), and subqueries for optimized querying.
@@ -74,7 +74,7 @@ Each table is interlinked to provide a comprehensive view of operations, enablin
 
 # **Initial Setup & Data Import Process:**
 
-**Data Import:**
+**### Data Import:**
 
 - A total of **9 CSV files** were imported directly into the `Amazon_Db` database.
 - This method was preferred as it simplifies the import process by directly mapping the CSV data to tables without manually creating each table beforehand.
