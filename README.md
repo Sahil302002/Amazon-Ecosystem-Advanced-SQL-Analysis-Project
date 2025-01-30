@@ -74,7 +74,7 @@ Each table is interlinked to provide a comprehensive view of operations, enablin
 
 # **Initial Setup & Data Import Process:**
 
-**### Data Import:**
+### **Data Import:**
 
 - A total of **9 CSV files** were imported directly into the `Amazon_Db` database.
 - This method was preferred as it simplifies the import process by directly mapping the CSV data to tables without manually creating each table beforehand.
