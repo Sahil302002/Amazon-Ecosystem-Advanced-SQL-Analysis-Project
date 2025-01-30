@@ -1,4 +1,8 @@
 # Amazon-Ecosystem-Advanced-SQL-Analysis-Project
+
+![Amazon-logo ](https://github.com/user-attachments/assets/52ee4b6f-66cb-46d1-9976-bc0d584eadc0)
+
+
 This project analyzes a dataset of 21,000+ records across 9 interrelated tables, simulating real-world business challenges within the Amazon ecosystem. It covers key domains like sales, customers, products, returns, payments, shipping, and inventory management.
 
 **Key Highlights:**
@@ -106,6 +110,8 @@ After importing the data, **foreign key constraints** were added to establish re
     - Shipping records are linked to orders using the `order_id`.
 - **Inventory ↔ Products**
     - Inventory records are connected to products via the `product_id`.
+
+![Amazon ER diagram](https://github.com/user-attachments/assets/a9be4a6e-9736-49c9-b025-fc610429d9c9)
 
 What makes this project unique is that while the instructor from the YouTube channel used **PostgreSQL** and **pgAdmin 4** for this project, I implemented the entire project using **SQL Server** and **SQL Server Management Studio (SSMS)**. This allowed me to adapt the workflow and techniques to a different SQL environment, offering a fresh perspective on how to approach the analysis in SQL Server.
 
