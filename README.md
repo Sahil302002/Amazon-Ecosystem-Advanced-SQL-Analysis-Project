@@ -24,27 +24,27 @@ This project showcases advanced SQL skills and the ability to extract valuable b
     - Contains product details like pricing and category.
     - Columns: `product_id`, `product_name`, `price`, `Cogs`, `category_id`
 
-- **Category Table:** 6 records, 2 columns  <a href = "customers.csv"> Category Csv File Link </a>
+- **Category Table:** 6 records, 2 columns  <a href = "category.csv"> Category Csv File Link </a>
     - Classifies products into categories.
     - Columns: `category_id`, `category_name`
       
-- **Sellers Table:** 55 records, 3 columns    <a href = "customers.csv"> Seller Csv File Link </a>
+- **Sellers Table:** 55 records, 3 columns    <a href = "sellers.csv"> Seller Csv File Link </a>
     - Information on sellers and their origin countries.
     - Columns: `seller_id`, `seller_name`, `origin`
       
-- **Orders Table:** 21,629 records, 5 columns  <a href = "customers.csv"> Orders Csv File Link </a>
+- **Orders Table:** 21,629 records, 5 columns  <a href = "orders.csv"> Orders Csv File Link </a>
     - Contains order details such as customer, seller, and order status.
     - Columns: `order_id`, `order_date`, `customer_id`, `seller_id`, `order_status`
 
-- **Order Items Table:** 21,629 records, 5 columns <a href = "customers.csv"> Order Items file Link </a>
+- **Order Items Table:** 21,629 records, 5 columns <a href = "order_items.csv"> Order Items file Link </a>
     - Provides details on purchased items, including quantity and price.  
     - Columns: `order_item`, `order_id`, `product_id`, `quantity`, `price`
       
-- **Shipping Table:** 21,141 records, 6 columns <a href = "customers.csv"> Shipping csv file Link </a>
+- **Shipping Table:** 21,141 records, 6 columns <a href = "shipping.csv"> Shipping csv file Link </a>
     - Tracks shipping and return statuses.
     - Columns: `shipping_id`, `order_id`, `shipping_date`, `return_date`, `shipping_provider`, `delivery_status`
     
-- **Payment Table:** 21,629 records, 4 columns <a href = "customers.csv"> Payment Csv File Link </a>
+- **Payment Table:** 21,629 records, 4 columns <a href = "payments.csv"> Payment Csv File Link </a>
     - Records payment status and transaction details.
     - Columns: `payment_id`, `order_id`, `payment_date`, `payment_status`
 
