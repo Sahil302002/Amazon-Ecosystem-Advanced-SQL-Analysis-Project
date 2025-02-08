@@ -162,6 +162,7 @@ Amazon's clients (including customers, sellers, and business stakeholders) seek 
 
 - **Solution  Link of the Business Problems with Screenshot and Query** <a href= "Amazon Advance SQL Data Analysis Project.pdf">Link</a>
 - **SQL Script Prepared to solve these business Problem** <a href = "Amazon SQL Script.sql"> Link</a>
+- **Document file created in this Project**  <a href = "Amazon Advance SQL Data Analysis Project.docx">Link</a>
 
 ### **Best-Selling & Least-Selling Products**
 
