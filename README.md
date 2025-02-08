@@ -2,10 +2,11 @@
 
 ![Amazon-logo ](https://github.com/user-attachments/assets/52ee4b6f-66cb-46d1-9976-bc0d584eadc0)
 
+# About this Project
 
 This project analyzes a dataset of 21,000+ records across 9 interrelated tables, simulating real-world business challenges within the Amazon ecosystem. It covers key domains like sales, customers, products, returns, payments, shipping, and inventory management.
 
-### **Key Highlights:**
+**Key Highlights:**
 
 - **Data Handling**: Managed large-scale datasets (21,000+ records, 9 tables) typical of e-commerce platforms.
 - **SQL Techniques**: Used CTEs, Window Functions (LAG, DENSE_RANK), and subqueries for optimized querying.
@@ -14,260 +15,327 @@ This project analyzes a dataset of 21,000+ records across 9 interrelated tables,
 
 This project showcases advanced SQL skills and the ability to extract valuable business insights from complex e-commerce data, making it ideal for data analytics and business intelligence roles.
 
-## **Dataset Overview and Dataset File Link**
+## **Objective of Amazon Ecosystem Project as a Data Analyst**
 
-- **Customers Table:** 898 records, 4 columns,  <a href = "customers.csv"> Customer Csv File Link</a>
-    - Captures customer demographics.
-    - Columns: `customer_id`, `first_name`, `last_name`, `state`
-      
-- **Products Table:** 766 records, 5 columns  <a href = "products.csv"> Products  Csv File Link</a>
-    - Contains product details like pricing and category.
-    - Columns: `product_id`, `product_name`, `price`, `Cogs`, `category_id`
+Amazon’s clients—**whether sellers, logistics partners, or internal teams**—are looking for data-driven insights to optimize operations, improve customer experience, and maximize profits.
 
-- **Category Table:** 6 records, 2 columns  <a href = "category.csv"> Category Csv File Link </a>
-    - Classifies products into categories.
-    - Columns: `category_id`, `category_name`
-      
-- **Sellers Table:** 55 records, 3 columns    <a href = "sellers.csv"> Seller Csv File Link </a>
-    - Information on sellers and their origin countries.
-    - Columns: `seller_id`, `seller_name`, `origin`
-      
-- **Orders Table:** 21,629 records, 5 columns  <a href = "orders.csv"> Orders Csv File Link </a>
-    - Contains order details such as customer, seller, and order status.
-    - Columns: `order_id`, `order_date`, `customer_id`, `seller_id`, `order_status`
+The objective of this project is to analyze and extract key business insights from Amazon’s ecosystem to assist the company’s leadership in making data-driven decisions. By identifying  
 
-- **Order Items Table:** 21,629 records, 5 columns <a href = "order_items.csv"> Order Items file Link </a>
-    - Provides details on purchased items, including quantity and price.  
-    - Columns: `order_item`, `order_id`, `product_id`, `quantity`, `price`
-      
-- **Shipping Table:** 21,141 records, 6 columns <a href = "shipping.csv"> Shipping csv file Link </a>
-    - Tracks shipping and return statuses.
-    - Columns: `shipping_id`, `order_id`, `shipping_date`, `return_date`, `shipping_provider`, `delivery_status`
-    
-- **Payment Table:** 21,629 records, 4 columns <a href = "payments.csv"> Payment Csv File Link </a>
-    - Records payment status and transaction details.
-    - Columns: `payment_id`, `order_id`, `payment_date`, `payment_status`
-
-- **Inventory Table:** 765 records, 5 columns     <a href = "inventory.csv"> Inventory Csv File Link</a>
-    - Monitors stock levels and warehouse information.
-    - Columns: `inventory_id`, `product_id`, `stock`, `warehouse_id`, `last_stock`
-
-## **Learning Objectives:**
-
-- Analyze sales performance, customer behavior, and product trends.
-- Monitor inventory to identify products below stock thresholds.
-- Evaluate customer return behavior and seller performance.
+- Increase Sales
+- Improve Inventory Management
+- Enhance Customer Satisfaction
+- Optimize Shipping & Logistics
+- Reduce Fraud & Returns
 
 ## **Tools Used:**
 
 - Microsoft SQL SERVER database management system.
 - SQL SERVER MANAGEMENT STUDIO (SSMS) for database setup, management, and query execution.
 
-## Database Design:
+## **Task Done in This Project**
 
-The database architecture is modeled after Amazon’s workflow, with parent-child table relationships:
+This project involved building a comprehensive SQL database for an e-commerce platform similar to Amazon, aimed at analyzing sales, customer behavior, product trends, and monitoring inventory. The dataset includes multiple tables, each serving different aspects of the business:
 
-- **Parent Tables:** Customers, Categories, and Sellers.
-- **Child Tables:** Products, Orders, Order Items, Payments, Shipping, and Inventory.
+**Dataset Overview:**
 
-Each table is interlinked to provide a comprehensive view of operations, enabling detailed analysis of sales, inventory, and customer behaviors.
+- The project uses 9 tables: **Customers**, **Products**, **Categories**, **Sellers**, **Orders**, **Order Items**, **Shipping**, **Payments**, and **Inventory**.
+- Relationships were established through **primary** and **foreign keys** to ensure data integrity and enable complex queries.
 
-# **Initial Setup & Data Import Process:**
+**Learning Objectives:**
 
-### **Data Import:**
+- Analyze **sales performance**, **customer behavior**, and **product trends**.
+- Monitor **inventory levels** and identify stock shortages.
+- Evaluate **customer returns** and **seller performance**.
 
-- A total of **9 CSV files** were imported directly into the `Amazon_Db` database.
-- This method was preferred as it simplifies the import process by directly mapping the CSV data to tables without manually creating each table beforehand.
-- **Primary Key Setup:** During the import, special attention was given to ensure that the **primary key columns** were correctly identified for each dataset.
-- **Column Data Types:** The correct **data types** were assigned to each column to ensure data integrity and consistency.
+**Database Design:**
 
-**Foreign Key Constraints:**
-After importing the data, **foreign key constraints** were added to establish relationships between the tables and ensure referential integrity. Below are the foreign key constraints added to the respective tables:
+- The database mirrors **Amazon's workflow** with parent-child relationships, linking key tables like Customers, Sellers, and Orders.
+- The design allows for thorough analysis of operations across various departments.
 
-- **Products ↔ Category**
-    - Products are linked to their respective categories by the `category_id`.
-- **Orders ↔ Customers**
-    - Orders are associated with customers using the `customer_id`.
-- **Orders ↔ Sellers**
-    - Orders are associated with sellers via the `seller_id`.
-- **Order_items ↔ Orders**
-    - Order items are connected to orders using the `order_id`.
-- **Order_items ↔ Products**
-    - Order items are linked to products via the `product_id`.
-- **Payments ↔ Orders**
-    - Payments are associated with orders using the `order_id`.
-- **Shipping ↔ Orders**
-    - Shipping records are linked to orders using the `order_id`.
-- **Inventory ↔ Products**
-    - Inventory records are connected to products via the `product_id`.
+**Initial Setup & Data Import Process:**
 
-![Amazon ER diagram](https://github.com/user-attachments/assets/a9be4a6e-9736-49c9-b025-fc610429d9c9)
+- Data was imported from **9 CSV files** into the **Amazon_Db** database, followed by adding **primary keys** and **foreign key constraints**.
+- Attention was given to the integrity of the relationships between the tables, such as linking **Products ↔ Categories** and **Orders ↔ Customers**.
 
-What makes this project unique is that while the instructor from the YouTube channel used **PostgreSQL** and **pgAdmin 4** for this project, I implemented the entire project using **SQL Server** and **SQL Server Management Studio (SSMS)**. This allowed me to adapt the workflow and techniques to a different SQL environment, offering a fresh perspective on how to approach the analysis in SQL Server.
+**Skills Demonstrated:**
 
-# Skills Demonstrated in this Project
+- **Database Design & Integrity Management:** Ensured proper schema design, data integrity, and optimization of table structures.
+- **Data Cleaning & Filtering:** Employed techniques like **NULLIF()** and **COALESCE()** for data cleaning and error handling.
+- **Advanced Querying & Business Intelligence:** Used **aggregations**, **window functions**, and **CTEs** for complex analysis of sales, revenue, and customer trends.
+- **Customer & Seller Performance Analysis:** Identified high-value customers and evaluated seller performance with rankings.
+- **Sales & Revenue Insights:** Analyzed product sales, category contributions, return rates, and profit margins.
 
-### **Database Design & Data Integrity Management**
+## **Insights Amazon’s Clients Want & Possible Reasons Behind Them**
 
-- **Schema Modification:** Used `ALTER TABLE` to modify table structures (adding/removing constraints, changing data types).
-- **Primary & Foreign Keys:** Ensured referential integrity between different tables (Orders, Customers, Sellers, etc.).
-- **Data Type Optimization:** Changed the `MONEY` data type to `INT`, improving data consistency and performance.
+Amazon's clients (including customers, sellers, and business stakeholders) seek different types of insights to optimize their operations, improve customer satisfaction, and maximize revenue. Below are the key insights they might be interested in and the reasons behind them:
 
-### **Data Cleaning & Filtering Techniques**
+### **Best-Selling & Least-Selling Products**
 
-- Used **WHERE filters** to remove unwanted order statuses (`'Inprogress'`, `'returned'`) before calculating insights.
-- Applied **NULLIF()** to prevent **division by zero errors** in percentage calculations.
-- Used **COALESCE()** to handle missing values in sales analysis.
+Task: Top 10 selling products and least-selling products by state.
 
-### **Advanced Querying & Business Intelligence**
+*Reason:*
 
-- **Aggregations & Business Metrics Calculation:**
-    - Used `SUM()`, `COUNT()`, `AVG()`, and `ROUND()` for revenue, order count, and profit calculations.
-    - `CASE WHEN` statements for conditional business logic (e.g., classifying customers as new vs. returning).
-- **Window Functions for Trend Analysis:**
-    - Used `LAG()` for **month-over-month & year-over-year** sales comparisons.
-    - `DENSE_RANK()` & `ROW_NUMBER()` for ranking best-selling products and top-performing sellers.
-- **Common Table Expressions (CTEs) for Modular Queries:**
-    - Used `WITH` clauses to break down complex queries into readable steps.
-    - Example: CTEs for **Top Sellers**, **Monthly Sales Trends**, and **Customer Order Frequency**.
+- Helps sellers optimize inventory by restocking high-demand products.
+- Allows Amazon to promote slow-moving items through discounts or targeted ads.
 
-### **Advanced Joins & Data Retrieval Techniques**
+**Insights:** 
 
-- **Optimized Joins:** Used **INNER JOIN**, **LEFT JOIN**, and subqueries to merge datasets efficiently.
-- **Filtering Techniques:**
-    - Used `HAVING` and `WHERE` clauses for precise data extraction.
-    - Example: Filtering out `Inprogress` and `Returned` orders to get **accurate revenue** calculations.
+These are Top 10 Products with Highest Sales
 
-### **Customer & Seller Performance Analysis**
+Apple iMac Pro with 0.62 Miilion Sales , Apple iMac 27-Inch Retina with 0.23 Million Sales, Canon EOS R5 Mirrorless Camera with 0.22 Million Sales, Apple iMac 24-Inch 0.18 Million, 
 
-- **Customer Behavior Analysis:** Identified **high-value customers** (those with more than 5 orders) using `HAVING COUNT() > 5`.
-- **Inactive Customer Detection:** Used `LEFT JOIN` and `WHERE order_id IS NULL` to find customers who haven’t placed orders recently.
-- **Seller Performance Evaluation:**
-    - Joined `Orders`, `Order_Items`, `Sellers`, and `Products` tables to track **top-performing sellers**.
-    - Used `DENSE_RANK()` to rank sellers based on total revenue.
+These are Top 10 least selling Product By Lowest Sales: 
 
-### **Sales & Revenue Insights**
+Pet Travel Water Bottle with 38.97 Total Sales , Kid’s Yoga Mat with 75.96 sales, Dog Toothpaste with 79.92 sales, Cat Tunnels with 79.96 sales, Cat Wand Toy with 104.93 sales
+Hot Wheels Cars, Sports Water Bottle, Dog Bone, Bird Toy, Vegetable Peeler
 
-- **Product Performance:** Ranked **top 10 selling products** using `ORDER BY total_sales DESC`.
-- **Category-Wise Contribution:** Used **subqueries** and `SUM()` to calculate **each category’s contribution** to total revenue.
-- **Return Rate & Profit Margins:**
-    - Identified products with high return rates using `COUNT()` and `CASE WHEN`.
-    - Analyzed profit margins by computing revenue minus cost price.
+### **Revenue Distribution Across Categories**
 
-- ### **Access my Project file**
-  
-- Amazon SQL Analysis Report (PDF): <a href = "Amazon Advance SQL Data Analysis Project.pdf">Report Link </a>
-- Amazon SQL Script: <a href = "Amazon SQL Script.sql"> Script Link </a>
-- Amazon SQL Query Documentation (Word) <a href = "Amazon Advance SQL Data Analysis Project.docx">  MS Word Report Link </a>
+Task: Contribution of each category to total revenue.
 
+**Reason:**
 
-# Business Problem Solved in this Task
+- Helps Amazon identify high-performing categories to focus on.
+- Allows sellers to make data-driven decisions about what to stock.
 
-### Task 1: Update Order ID Column Data Type in Orders Table
+**Insights:**
 
-In the Orders table, the order_id column was mistakenly defined as a primary key with the
-MONEY data type instead of INT. Update the order_id column to use the INT data type.
+Electronics is the Highest Revenue Generating Category with Sales of  11.3 Miilion and 89.74 Percent of Total Revenue
+Sports & Outdoors with 3.62% of Total Revenue
+Toys & Games: 2.80 % of Total Revenu
+Pet Supplies: 2.08% of Total Revenue
+clothing: 1.06% of Total Reveneu
+home & kitchen with 0.71% of Total Revenue
 
-### Task 2 : Top Selling Products by Total Sales
+### **High-Value Customers & Average Order Value**
 
-Query the Top 10 Products by Total sales value.
-Challenge: Include Product name, total quantity sold, and total sales value
+Task: Customers with more than 5 orders and their average spending.
 
-### Task 3 Revenue Breakdown by Product Category
+Reason:
 
-Calculate total revenue generated by each product category.
-Challenge: Include the percentage contribution of each category to total revenue
+- Identifies loyal customers for retention programs and exclusive offers.
+- Helps in segmenting customers for personalized marketing.
 
-### Task 4 : Average Order Value for Customers with More Than 5 Orders
+Insights: As you can observe these are top 5 highest Order value customer
 
-Compute the average Order value for each customer
-Challenge: Include Only the Customers with more than 5 Orders
+Yvonne Turner	1792.83
+Samuel Reed	1524.27
+Quinn Green	1366.81
+Xavier Green	1299.98
+Emma Scott	1276.42
 
-### Task 5:  Monthly Sales Trend for the Past Year
+---
 
-Query Monthly Total Sales Over the Past year.
-Challenge: Display the sales trend, grouping by month, return current_month_sales, Last
-Month Sales
+### **Monthly Sales Trends & Forecasting**
 
-### Task 6:  Customers Registered but Never Made a Purchase
+Task: Monthly sales comparison to identify trends of Previous year.
 
-Find the Customer registered but never placed an order
-Challenge: List customer details and the time since their registration.
+Reason:
 
-### Task 7 : Best Selling Category by State
+- Helps Amazon adjust marketing campaigns and promotional events.
+- Enables sellers to anticipate demand fluctuations.
 
-Identify the best-selling product for each state
-Challenge: Include the Total Sales for that category within each State.
+Insights
 
-### Task 8 : Least Selling Products by State
+Month_name      % Growth Rate
 
-Identify the least-selling product for each state
-Challenge: Include the Total Sales for that category within each State.
+January          NULL
+February        3.74
+March             42.48
+April                5.64
+May                 2.75
+June                -17.83
+July                   2.98
+August            26.42
+September    -8.05
+October         -32.23
+November      -16.78
+December      -2.14
 
-### Task 9  Customer Lifetime Value (CLV) Ranking
+---
 
-Calculate the total value of orders placed by each customer over their lifetime.
-Challenge: Rank customers based on their Customer Lifetime Sales
+### **Registered but Inactive Customers**
 
-### Task 10 : Inventory Stock Alert for Low Stock Products
+Insight: Customers who signed up but never placed an order.
 
-Query Products with stock levels below a certain threshold(e., less than 10 units)
-Challenge: Include last restock date and warehouse information
+Reason:
 
-### Task 11 : Identify Orders with Shipping Delays
+- Helps in re-engagement strategies like personalized offers or email campaigns.
+- Identifies potential issues with user experience preventing purchases.
 
-Identify orders where the shipping date is later than 4 days after the order date.
-Challenge: Include customer, Order details, and delivery provider.
+Insights: There were 210 customers who are registered but never placed an order
 
-### Task 12 : Payment Success Rate Analysis
+---
 
-Calculate the Percentage of successful payments, access all orders.
-Challenge: Include breakdown by Payment status (eg., Failed,pending)
+### **Best & Worst-Selling Categories by State**
 
-### Task 13 : Top Performing Sellers Based on Sales,
+Task: Best and worst-performing categories in each state.
 
-Find the Top 5 sellers based on total Sales value.
-Challenge: Include both successful and failed Orders, and Display their percentage of
-successful Orders
+**Reason:**
 
-### Task 14 :  Product Profit Margin Calculation
+- Helps sellers optimize their stock based on regional demand.
+- Allows Amazon to plan state-specific ad campaigns and discounts.
 
-Calculate the profit margin for much product (difference between price and cost of goods sold)
-Challenge: Rank products by their profit margin, showing highest to lowest
+Insights: 
 
-### Task 15 Most Returned Products and Return Rate
+Electronics, Sports and Outdoors, and toys and Games these three are Best selling categories in most of the States where electronics stoods 1st most and then sport & Outerdoors, and then Toys and Games
 
-Query the top 10 products by the number of return.
-Challenge: Display the return rate as a percentage of total unitssold for each product
+Home and Kictchen, and sports Outdoors and Clothing  are Worst selling categories by most of the State
 
-Extra task -- Product Order Status and Sales Performance Summary
+---
 
-### Task 16  : Inactive Sellers in the Last 6 Months
+### **Customer Lifetime Value (CLV) & High-Spending Customers**
 
-Identify Seller who haven't made any sales in the Last 6 months
-Challenge : Show the last sale date and total sales from those sellers
+Task: Ranking customers by total lifetime purchases.
 
-### Task 17:  **Classify Customers as Returning or New Based on Returns**
+Reason:
 
-if the customer has done more than 5 return categorize them as returning otherwise new
-challenge: List customers id, name, total orders, total returns
+- Helps Amazon prioritize high-value customers for premium services.
+- Assists sellers in targeting their most profitable customers.
 
-### Task 18 :  Top 5 Customers by Orders in Each State
+Insights:  Here are Top 10 
 
-Identify the Top 5 Customers with the Highest number of Orders for Each State.
-Challenge: Include the Number of Orders and total Sales for each Customer.
+Customer_Name CLT Sales  Rank
 
-### Task 20 :  Revenue by Shipping Provider Analysis
+Yvonne Reed      89,029.09       1
+Mia Reed    	      82,350.18 	2
+Fred Davis	      82,179.17	        3
+Quinn Davis        79,205.23       4
+Nathan Lee	      77,136.98	       5
+Henry Reed	      75,825.21	       6
+Wendy Reed	      75,738.73       7
+Jack Johnson	75,017.15	8
+Zackary Davis	74,862.01	9
+Olivia Barnes	74,692.81	10
 
-Calculate the Total Revenue handled by each shipping provider.
-Challenge: Include the Total Number of Orders handled and the Average delivery time for each provider
+---
 
-### Task 21  : Top 10 Products with Highest Revenue Decline from 2022 to 2023
+### **Low Stock Alerts for Inventory Management**
 
-Top 10 Product with Highest decreasing revenue ratio compare to last year(2022) and current year(2023)
-Challenge: Return product_id, Product_name, category_name,2022 revenue and 2023 Revenue decrease ratio at end Round the result
+Task: Products with less than 10 units in stock.
 
-### Task 22: Store Procedure to Update Inventory on Product Sale
+Reason:
 
-Create a function as soon as the product is sold the same quantity should reduced from
-Inventory table
+- Helps prevent stockouts and lost sales.
+- Enables Amazon to ensure better warehouse management.
+
+---
+
+### **Shipping Performance & Delays**
+
+Task: Orders delayed beyond 4 days with details of delivery provider.
+
+Reason:
+
+- Identifies logistics bottlenecks and improves delivery efficiency.
+- Helps in negotiating better terms with third-party shipping providers.
+
+---
+
+### **Payment Success Rate & Issues**
+
+Task: Breakdown of successful, failed, and pending payments.
+
+Reason:
+
+- Helps identify technical issues causing failed payments.
+- Improves customer experience by reducing transaction failures.
+
+Insights: 
+
+Payment Status     Nr of payments     Percent_Breakdown
+
+Payment Successed	18301	                84.61
+Refunded 	                2840           	       13.13
+Payment Failed	        488                 	2.26
+NULL	                           0                          	0
+
+---
+
+### **Top Performing Sellers & Seller Inactivity**
+
+Task: Best-performing sellers and those inactive for 6 months.
+
+Reason:
+
+- Helps Amazon reward high-performing sellers with better visibility.
+- Encourages inactive sellers to resume business by offering incentives.
+
+Insights: Inactive sellers : Clorox, Lysol
+
+---
+
+### **Product Profit Margins & Pricing Strategy**
+
+Task: Most profitable products ranked by margin.
+
+Reason:
+
+- Helps sellers focus on high-margin items to maximize profits.
+- Allows Amazon to set better commission rates and pricing models.
+
+---
+
+### **Most Returned Products & Return Rates**
+
+Task: Products with the highest return percentages.
+
+Reason:
+
+- Helps sellers identify quality issues or misleading product descriptions.
+- Allows Amazon to refine return policies and improve customer trust.
+
+---
+
+### **Customer Classification (New vs. Returning Based on Returns)**
+
+Task: Customers with more than 5 returns are classified as “Returning” customers.
+
+Reason:
+
+- Helps Amazon handle frequent returners differently (e.g., stricter return policies).
+- Improves fraud detection for excessive returns.
+
+---
+
+### **Top Customers by State**
+
+Task: Top 5 customers per state based on order count.
+
+Reason:
+
+- Helps sellers and Amazon understand regional shopping behavior.
+- Enables targeted offers based on customer location.
+
+---
+
+### **Shipping Provider Performance & Revenue Analysis**
+
+Task: Revenue, number of orders, and average delivery time by provider.
+
+Reason:
+
+- Helps Amazon track which shipping companies perform best.
+- Allows for better logistics and cost optimization.
+
+---
+
+### **Declining Revenue Products (2022 vs. 2023)**
+
+Task: Products with the highest revenue decline.
+
+Reason:
+
+- Identifies outdated or less popular products for potential removal.
+- Helps adjust marketing or pricing strategies to boost sales.
+
+---
+
+### **Automated Inventory Updates**
+
+Task: Function to reduce inventory automatically after a sale.
+
+Reason:
+
+- Ensures accurate stock levels in real time.
+- Reduces the risk of overselling and improves fulfillment efficiency.
