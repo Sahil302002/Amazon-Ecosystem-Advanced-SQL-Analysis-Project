@@ -160,6 +160,9 @@ Inventory table
 # **Insights Amazon’s Clients Want & Possible Reasons Behind Them**
 Amazon's clients (including customers, sellers, and business stakeholders) seek different types of insights to optimize their operations, improve customer satisfaction, and maximize revenue. Below are the key insights they might be interested in and the reasons behind them:
 
+**Solution  Link of the Business Problems with Screenshot and Query** Link
+**SQL Script Prepared to solve these business Problem** <a href = "Amazon SQL Script.sql">
+
 ### **Best-Selling & Least-Selling Products**
 
 Task: Top 10 selling products and least-selling products by state.
