@@ -291,40 +291,31 @@ Task: Products with less than 10 units in stock.
 
 ### **Shipping Performance & Delays**
 Task: Orders delayed beyond 4 days with details of delivery provider.
-
-Reason:
-
+**Reason:**
 - Identifies logistics bottlenecks and improves delivery efficiency.
 - Helps in negotiating better terms with third-party shipping providers.
 
 ---
 
 ### **Payment Success Rate & Issues**
-
 Task: Breakdown of successful, failed, and pending payments.
-
-Reason:
-
+**Reason:**
 - Helps identify technical issues causing failed payments.
 - Improves customer experience by reducing transaction failures.
 
 Insights: 
-
 Payment Status     Nr of payments     Percent_Breakdown
-
-Payment Successed	18301	                84.61
-Refunded 	                2840           	       13.13
+Payment Successed   	18301	                84.61
+Refunded 	             2840         	       13.13
 Payment Failed	        488                 	2.26
-NULL	                           0                          	0
+NULL	                    0                    	0
 
 ---
 
 ### **Top Performing Sellers & Seller Inactivity**
 
 Task: Best-performing sellers and those inactive for 6 months.
-
-Reason:
-
+**Reason:**
 - Helps Amazon reward high-performing sellers with better visibility.
 - Encourages inactive sellers to resume business by offering incentives.
 
@@ -333,76 +324,55 @@ Insights: Inactive sellers : Clorox, Lysol
 ---
 
 ### **Product Profit Margins & Pricing Strategy**
-
 Task: Most profitable products ranked by margin.
-
-Reason:
-
+**Reason:**
 - Helps sellers focus on high-margin items to maximize profits.
 - Allows Amazon to set better commission rates and pricing models.
 
 ---
 
 ### **Most Returned Products & Return Rates**
-
 Task: Products with the highest return percentages.
-
-Reason:
-
+**Reason:**
 - Helps sellers identify quality issues or misleading product descriptions.
 - Allows Amazon to refine return policies and improve customer trust.
 
 ---
 
 ### **Customer Classification (New vs. Returning Based on Returns)**
-
 Task: Customers with more than 5 returns are classified as “Returning” customers.
-
-Reason:
-
+**Reason:**
 - Helps Amazon handle frequent returners differently (e.g., stricter return policies).
 - Improves fraud detection for excessive returns.
 
 ---
 
 ### **Top Customers by State**
-
 Task: Top 5 customers per state based on order count.
-
-Reason:
-
+**Reason:**
 - Helps sellers and Amazon understand regional shopping behavior.
 - Enables targeted offers based on customer location.
 
 ---
 
 ### **Shipping Provider Performance & Revenue Analysis**
-
 Task: Revenue, number of orders, and average delivery time by provider.
-
-Reason:
-
+**Reason:**
 - Helps Amazon track which shipping companies perform best.
 - Allows for better logistics and cost optimization.
 
 ---
 
 ### **Declining Revenue Products (2022 vs. 2023)**
-
 Task: Products with the highest revenue decline.
-
-Reason:
-
+**Reason:**
 - Identifies outdated or less popular products for potential removal.
 - Helps adjust marketing or pricing strategies to boost sales.
 
 ---
 
 ### **Automated Inventory Updates**
-
 Task: Function to reduce inventory automatically after a sale.
-
-Reason:
-
+**Reason:**
 - Ensures accurate stock levels in real time.
 - Reduces the risk of overselling and improves fulfillment efficiency.
