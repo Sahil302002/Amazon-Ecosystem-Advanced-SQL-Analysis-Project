@@ -15,7 +15,7 @@ This project analyzes a dataset of 21,000+ records across 9 interrelated tables,
 
 This project showcases advanced SQL skills and the ability to extract valuable business insights from complex e-commerce data, making it ideal for data analytics and business intelligence roles.
 
-## **Objective of Amazon Ecosystem Analysis  Project**
+# **Objective of Amazon Ecosystem Analysis  Project**
 
 Amazon’s clients—**whether sellers, logistics partners, or internal teams**—are looking for data-driven insights to optimize operations, improve customer experience, and maximize profits.
 
@@ -26,6 +26,7 @@ The objective of this project is to analyze and extract key business insights fr
 - Enhance Customer Satisfaction
 - Optimize Shipping & Logistics
 - Reduce Fraud & Returns
+  
 # Business Problem Assigned to Me in This Project
 
 **Question 1**: In the Orders table, the order_id column was mistakenly defined as a primary key with the
