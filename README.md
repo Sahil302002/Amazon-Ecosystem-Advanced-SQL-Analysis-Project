@@ -29,8 +29,7 @@ The objective of this project is to analyze and extract key business insights fr
   
 # Business Problem Assigned to Me in This Project
 
-- **Question 1**: In the Orders table, the order_id column was mistakenly defined as a primary key with the
-MONEY data type instead of INT. Update the order_id column to use the INT data type.
+- **Question 1**: In the Orders table, the order_id column was mistakenly defined as a primary key with the MONEY data type instead of INT. Update the order_id column to use the INT data type.
 
 - **Question: 2**  Query the Top 10 Products by Total sales value. Include Product name, total quantity sold, and total sales value
 
