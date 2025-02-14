@@ -181,48 +181,36 @@ Hot Wheels Cars, Sports Water Bottle, Dog Bone, Bird Toy, Vegetable Peeler
 
 ### **High-Value Customers & Average Order Value**
 
-- Customer Naem Avg Order Value
-- Yvonne Turner	1792.83
-- Samuel Reed	1524.27
-- Quinn Green	1366.81
-- Xavier Green	1299.98
-- Emma Scott	1276.42
+- Customer_Naem   Avg Order Value
+- Yvonne Turner	    1792.83
+- Samuel Reed	      1524.27
+- Quinn Green	      1366.81
+- Xavier Green	    1299.98
+- Emma Scott      	1276.42
 
 ### **Monthly Sales Trends & Forecasting**
 
-Month_name    % Growth Rate
-January         NULL
-February        3.74
-March           42.48
-April          5.64
-May            2.75
-June           -17.83
-July           2.98
-August        26.42
-September     -8.05
-October       -32.23
-November      -16.78
-December      -2.14
+- Month_name    % Growth Rate
+- January         NULL
+- February        3.74
+- March           42.48
+- April           5.64
+- May             2.75
+- June           -17.83
+- July            2.98
+- August          26.42
+- September      -8.05
+- October        -32.23
+- November       -16.78
+- December       -2.14
 
----
 
 ### **Registered but Inactive Customers**
 
-Insight: Customers who signed up but never placed an order.
-**Reason**:
-- Helps in re-engagement strategies like personalized offers or email campaigns.
-- Identifies potential issues with user experience preventing purchases.
+ There were 210 customers who are registered but never placed an order
 
-Insights: There were 210 customers who are registered but never placed an order
-
----
 
 ### **Best & Worst-Selling Categories by State**
-
-Task: Best and worst-performing categories in each state.
-**Reason:**
-- Helps sellers optimize their stock based on regional demand.
-- Allows Amazon to plan state-specific ad campaigns and discounts.
 
 Insights: 
 - Electronics, Sports and Outdoors, and toys and Games these three are Best selling categories in most of the States where electronics stoods 1st most and then sport & Outerdoors, and then Toys and Games
@@ -233,23 +221,17 @@ Insights:
 
 ### **Customer Lifetime Value (CLV) & High-Spending Customers**
 
-Task: Ranking customers by total lifetime purchases.
-**Reason**:
-- Helps Amazon prioritize high-value customers for premium services.
-- Assists sellers in targeting their most profitable customers.
-
-Insights:  Here are Top 10 
-Customer_Name    CLT Sales        Rank
-Yvonne Reed      89,029.09        1
-Mia Reed    	      82,350.18 	  2
-Fred Davis	      82,179.17	      3
-Quinn Davis        79,205.23      4
-Nathan Lee	      77,136.98	      5
-Henry Reed	      75,825.21	      6
-Wendy Reed	      75,738.73       7
-Jack Johnson	    75,017.15      	8
-Zackary Davis	   74,862.01	      9
-Olivia Barnes	   74,692.81	      10
+- Customer_Name    CLT Sales        Rank
+- Yvonne Reed      89,029.09        1
+- Mia Reed    	      82,350.18 	  2
+- Fred Davis	      82,179.17	      3
+- Quinn Davis        79,205.23      4
+- Nathan Lee	      77,136.98	      5
+- Henry Reed	      75,825.21	      6
+- Wendy Reed	      75,738.73       7
+- Jack Johnson	    75,017.15      	8
+- Zackary Davis	   74,862.01	      9
+- Olivia Barnes	   74,692.81	      10
 
 ---
 
@@ -262,25 +244,16 @@ Task: Products with less than 10 units in stock.
 ---
 
 ### **Shipping Performance & Delays**
-Task: Orders delayed beyond 4 days with details of delivery provider.
-**Reason:**
-- Identifies logistics bottlenecks and improves delivery efficiency.
-- Helps in negotiating better terms with third-party shipping providers.
 
 ---
 
 ### **Payment Success Rate & Issues**
-Task: Breakdown of successful, failed, and pending payments.
-**Reason:**
-- Helps identify technical issues causing failed payments.
-- Improves customer experience by reducing transaction failures.
 
-Insights: 
-Payment Status     Nr of payments     Percent_Breakdown
-Payment Successed   	18301	                84.61
-Refunded 	             2840         	       13.13
-Payment Failed	        488                 	2.26
-NULL	                    0                    	0
+- Payment Status     Nr of payments    Percent_Breakdown
+- Payment Successed    18301	               84.61
+- Refunded 	            2840        	       13.13
+- Payment Failed	       488                	2.26
+- NULL	                   0                   	0
 
 ---
 
