@@ -155,22 +155,14 @@ This project involved building a comprehensive SQL database for an e-commerce pl
 
 - This **Advanced SQL-driven analysis** provided Amazon’s team with actionable insights to improve **sales strategy, customer engagement, inventory planning, logistics, and operational efficiency**, driving overall business growth.
 
-
-# **Insights Amazon’s Clients Want & Possible Reasons Behind Them**
-Amazon's clients (including customers, sellers, and business stakeholders) seek different types of insights to optimize their operations, improve customer satisfaction, and maximize revenue. Below are the key insights they might be interested in and the reasons behind them:
-
 - **Solution  Link of the Business Problems with Screenshot and Query** <a href= "Amazon Advance SQL Data Analysis Project.pdf">Link</a>
 - **SQL Script Prepared to solve these business Problem** <a href = "Amazon SQL Script.sql"> Link</a>
 - **Document file created in this Project**  <a href = "Amazon Advance SQL Data Analysis Project.docx">Link</a>
 
+# **Key Insights and Recommendations**
+Amazon's clients (including customers, sellers, and business stakeholders) seek different types of insights to optimize their operations, improve customer satisfaction, and maximize revenue. Below are the key insights they might be interested in and the reasons behind them:
+
 ### **Best-Selling & Least-Selling Products**
-
-Task: Top 10 selling products and least-selling products by state.
-**Reason:**
-- Helps sellers optimize inventory by restocking high-demand products.
-- Allows Amazon to promote slow-moving items through discounts or targeted ads.
-
-**Insights:** 
 - These are Top 10 Products with Highest Sales
 - Apple iMac Pro with 0.62 Miilion Sales , Apple iMac 27-Inch Retina with 0.23 Million Sales, Canon EOS R5 Mirrorless Camera with 0.22 Million Sales, Apple iMac 24-Inch 0.18 Million, 
 
@@ -180,47 +172,24 @@ Hot Wheels Cars, Sports Water Bottle, Dog Bone, Bird Toy, Vegetable Peeler
 
 ### **Revenue Distribution Across Categories**
 
-- Task: Contribution of each category to total revenue.
-**Reason:**
-- Helps Amazon identify high-performing categories to focus on.
-- Allows sellers to make data-driven decisions about what to stock.
-
-**Insights:**
-Electronics is the Highest Revenue Generating Category with Sales of  11.3 Miilion and 89.74 Percent of Total Revenue
-Sports & Outdoors with 3.62% of Total Revenue
-Toys & Games: 2.80 % of Total Revenu
-Pet Supplies: 2.08% of Total Revenue
-clothing: 1.06% of Total Reveneu
-home & kitchen with 0.71% of Total Revenue
+- Electronics is the Highest Revenue Generating Category with Sales of  11.3 Miilion and 89.74 Percent of Total Revenue
+- Sports & Outdoors with 3.62% of Total Revenue
+- Toys & Games: 2.80 % of Total Revenu
+- Pet Supplies: 2.08% of Total Revenue
+- clothing: 1.06% of Total Reveneu
+- home & kitchen with 0.71% of Total Revenue
 
 ### **High-Value Customers & Average Order Value**
 
-Task: Customers with more than 5 orders and their average spending.
-
-Reason:
-
-- Identifies loyal customers for retention programs and exclusive offers.
-- Helps in segmenting customers for personalized marketing.
-
-Insights: As you can observe these are top 5 highest Order value customer
-
-Customer Naem Avg Order Value
-Yvonne Turner	1792.83
-Samuel Reed	1524.27
-Quinn Green	1366.81
-Xavier Green	1299.98
-Emma Scott	1276.42
-
----
+- Customer Naem Avg Order Value
+- Yvonne Turner	1792.83
+- Samuel Reed	1524.27
+- Quinn Green	1366.81
+- Xavier Green	1299.98
+- Emma Scott	1276.42
 
 ### **Monthly Sales Trends & Forecasting**
 
-Task: Monthly sales comparison to identify trends of Previous year.
-**Reason**:
-- Helps Amazon adjust marketing campaigns and promotional events.
-- Enables sellers to anticipate demand fluctuations.
-
-Insights
 Month_name    % Growth Rate
 January         NULL
 February        3.74
