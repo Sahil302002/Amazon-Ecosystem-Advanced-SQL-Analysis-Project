@@ -6,7 +6,7 @@
 
 This project analyzes a dataset of 21,000+ records across 9 interrelated tables, simulating real-world business challenges within the Amazon ecosystem. It covers key domains like sales, customers, products, returns, payments, shipping, and inventory management.
 
-**Key Highlights:**
+### **Key Highlights:**
 
 - **Data Handling**: Managed large-scale datasets (21,000+ records, 9 tables) typical of e-commerce platforms.
 - **SQL Techniques**: Used CTEs, Window Functions (LAG, DENSE_RANK), and subqueries for optimized querying.
@@ -29,7 +29,7 @@ The objective of this project is to analyze and extract key business insights fr
   
 # Business Problem Assigned to Me in This Project
 
--**Question 1**: In the Orders table, the order_id column was mistakenly defined as a primary key with the
+- **Question 1**: In the Orders table, the order_id column was mistakenly defined as a primary key with the
 MONEY data type instead of INT. Update the order_id column to use the INT data type.
 
 **Question: 2**  Query the Top 10 Products by Total sales value. Include Product name, total quantity sold, and total sales value
