@@ -221,17 +221,17 @@ Insights:
 
 ### **Customer Lifetime Value (CLV) & High-Spending Customers**
 
-- Customer_Name    CLT Sales        Rank
-- Yvonne Reed      89,029.09        1
-- Mia Reed    	   82,350.18    	  2
-- Fred Davis	     82,179.17	      3
-- Quinn Davis      79,205.23        4
-- Nathan Lee	     77,136.98	      5
-- Henry Reed	     75,825.21	      6
-- Wendy Reed	     75,738.73        7
-- Jack Johnson     75,017.15      	8
-- Zackary Davis	   74,862.01	      9
-- Olivia Barnes	   74,692.81	      10
+- Customer_Name      CLT Sales        Rank
+- Yvonne Reed        89,029.09        1
+- Mia Reed    	     82,350.18    	  2
+- Fred Davis	       82,179.17	      3
+- Quinn Davis        79,205.23        4
+- Nathan Lee	       77,136.98	      5
+- Henry Reed	       75,825.21	      6
+- Wendy Reed	       75,738.73        7
+- Jack Johnson       75,017.15      	8
+- Zackary Davis	     74,862.01	      9
+- Olivia Barnes	     74,692.81	      10
 
 ---
 
